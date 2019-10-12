@@ -1,5 +1,5 @@
 import React from 'react';
-import Directory from '/home/amisha/Desktop/React-new/crwn-clothing/src/components/directory/directory,component.jsx';
+import Directory from '../../components/directory/directory.component';
 import './homepage.styles.scss';
  
 const HomePage = () =>  (
