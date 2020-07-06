@@ -6,7 +6,7 @@
 .pnp.js
 
 
-src/firebase/firebase.utils.js 
+/src/firebase/firebase.utils.js 
 
 # testing
 /coverage
