@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^7.1.0",
+    "grpc": "^1.24.3",
     "node": "^13.5.0",
     "node-sass": "^4.13.0",
     "npm": "6.13.4",
@@ -16,6 +17,7 @@
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
+    "request": "^2.88.2",
     "reselect": "^4.0.0"
   },
   "scripts": {
