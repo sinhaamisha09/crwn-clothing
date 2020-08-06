@@ -1,17 +1,18 @@
  import firebase from 'firebase/app';
  import 'firebase/firestore';
  import 'firebase/auth';
+//  import config from '../config.js';
 
- const config = {
-    apiKey: "AIzaSyAjcslBWdn6kAD6QzwE5HqXmiDAxvM-tqQ",
-    authDomain: "crwn-db-15c03.firebaseapp.com",
-    databaseURL: "https://crwn-db-15c03.firebaseio.com",
-    projectId: "crwn-db-15c03",
-    storageBucket: "",
-    messagingSenderId: "930590361733",
-    appId: "1:930590361733:web:a6d0a59118fd5bc13501ec",
-    measurementId: "G-3Z91MQ18VS"
-  };
+ const Config = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID, 
+  appId: process.env.REACT_APP_APP_ID
+  
+}
 
   export const createUserProfileDocument = async (userAuth, additionalData ) => {
   	if(!userAuth) return;
